@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LENOBOOB</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+  <body>
+
+  
+
+
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="vim.html">LENOBOOB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+    <a class="check.html" href="#collapseOne">Login/Signup</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+    <a class="nav-link disabled" href="#collapseThree">After The Run</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </nav>
+
+-->
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="done.html">LENOBOOB</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="feed.php">Post New</a>
+  </li>
+ <li class="nav-item">
+     {$name}
+  </li>
+</ul>
+
+
+<style>
+.carousel {
+  width:100%;
+  height:70%;
+}
+
+</style>
+
+
+<div class="card mb-3">
+  <img class="card-img-top" src="https://picsum.photos/894/180/?random" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Person's Name</h5>
+    <p class="card-text">This will contain the texts that person has posted.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+
+
+
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">We are LenobOOb</h1>
+  <p class="lead">For more details you can contact us</p>
+  <hr class="my-4">
+  <p>In case you are facing any issue you can report here</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Report</a>
+  </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://picsum.photos/1920/720?image=68" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/1920/720?image=57" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://picsum.photos/1920/720?image=93" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Before run
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+
+ 
+    <dl class="row">
+      <p>In the spirit of Republic Day and Swachcha Bharat, IIT Ropar is organising a mini-marathon. On behalf of the organising committee, I am pleased to invite IIT Community to participate in the event. Interested participants need to register by clicking on the registration link given below.</p>
+      <dt class="col-sm-3">Registration Date</dt>
+      <dd class="col-sm-9">19th Jan to 24th Jan</dd>
+
+      <dt class="col-sm-3">token collection date</dt>
+      <dd class="col-sm-9">25th Jan and 26th Jan</dd>
+    </dl>
+
+ 
+
+       
+
+
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://picsum.photos/286/180/?gravity=east" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Register here</a>
+          </div>
+      </div>
+
+
+      <div class="ps">
+        <p>P.S.: We expect ALL registered candidates to participate in the run. If for some reason you feel unable to take part in the run (post registration), please let us know immediately so that we can remove your registration details.</p>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          On the day of run
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+
+        <dl class="row">
+          <p>The run will start at IIT Ropar permanent campus (Birla Seed Farms) around 7 AM and finish at transit campus 1 (Nangal Road, Rupnagar). The total distance of the run would be around 8.5 KM. More details of the route and event will bee provided later. The participants who successfully complete the run will get appreciation certificate, medal and a hoodie.In addition, first three runners will get awards. The participants are expected to complete the run within 90 minutes.</p>
+          <dt class="col-sm-3">Run start date</dt>
+          <dd class="col-sm-9">27th Jan</dd>
+
+          <dt class="col-sm-3">Run start time</dt>
+          <dd class="col-sm-9">Around 7AM</dd>
+
+          <dt class="col-sm-3">token collection date</dt>
+          <dd class="col-sm-9">25th Jan and 26th Jan</dd>
+        </dl>
+
+        <img class="d-block w-100" src="route.png" alt="route">
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Ater the run
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+
+        <dl class="row">
+          <p>For all those who are participating will get IIT Ropar hoodee and certificate of participation</p>
+          <dt class="col-sm-3">Certificate Collection</dt>
+          <dd class="col-sm-9">29th Jan</dd>
+        </dl>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Contact Us
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+
+        <dl class="row">
+          <dt class="col-sm-3">Main Cordinatior</dt>
+          <dd class="col-sm-9">Dr. Mukesh Saini</dd>
+
+          <dt class="col-sm-3">Maid Id</dt>
+          <dd class="col-sm-9">mukesh@iitrpr.ac.in</dd>
+
+          <dt class="col-sm-3">Posted by</dt>
+          <dd class="col-sm-9">Shreyanshu Shekhar</dd>
+
+          <dt class="col-sm-3">Maid Id</dt>
+          <dd class="col-sm-9">2016csb1060@iitrpr.ac.in</dd>
+
+        </dl>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+-->
+
+
+
+
+  
+
+</body>
+</html>
+
+
+  
+
+
+
+

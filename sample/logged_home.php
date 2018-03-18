@@ -45,8 +45,14 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="vim.html">LENOBOOB</a>
+    <a class="nav-link active" href="done.html">LENOBOOB</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="feed.php">Post New</a>
+  </li>
+ <li class="nav-item" style="float: right;">
+     <?php echo "$_SESSION['name']"; ?>
+    </li>
 </ul>
 
 
@@ -55,99 +61,21 @@
   width:100%;
   height:70%;
 }
+
 </style>
 
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Log in</h1>
-    <p class="lead">Fill your username and password if you have already registered.</p>
+<div class="card mb-3">
+  <img class="card-img-top" src="https://picsum.photos/894/180/?random" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Person's Name</h5>
+    <p class="card-text">This will contain the texts that person has posted.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
-</div>
-
- <!--<form action="/csl203/sample/Register.php?action=login" method="post" onsubmit="/index.php?email=$ "  >
-
-              <p><input id="email" name="email" type="text" placeholder="Email"></p>
-            <p><input id="password" name="password" type="password" placeholder="Password">
-
-            <input name="form_submitted" type="hidden" value="1" /></p>
-
-            <p><input type="submit" value="Login" /></p>
-
-              </form>
-          </div>
-
-          <div id="tabs-2">
-            <form action="/csl203/sample/Register.php?action=signup" method="post">
-            <p><input id="name" name="name" type="text" placeholder="Name"></p>
-            <p><input id="email" name="email" type="text" placeholder="Email"></p>
-            <p><input id="phone_number" name="phone_number" type="text" placeholder="phone_number">
-            <p><input id="password" name="password" type="password" placeholder="Password">
-
-            <input name="action" type="hidden" value="signup" /></p>
-            <p><input type="submit" value="Signup" /></p>
-          </form>
- -->        
-              
-<form action="/csl203/sample/Authenticate.php?action=login" method="post">
-    
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">Enter to e-mail from which you had registered</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
-  </div>
-    <p>
-    <input name="action" type="hidden" value="login" /></p>
-     <div class="error-message"><?php if(isset($message)) { echo $message; } ?></div>       
-  <div class="but">
-    <button type="submit" class="btn btn-primary">Login</button>
-  </div>
-  
-</form>
 
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Sign up</h1>
-    <p class="lead">New here!!... Then please register, we will take care rest.</p>
-  </div>
-</div>
 
 
-<form action="/csl203/sample/Authenticate.php?action=signup" method="post">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputName">Name</label>
-      <input type="text" class="form-control" id="inputPassword4" name="name" placeholder="Name">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Number</label>
-      <input type="text" class="form-control" id="inputPassword4" name="phone_number" placeholder="Number">
-    </div>
-  </div>
-    
-    <p>
-    <input name="action" type="hidden" value="signup" /></p>
-    <div class="error-message"><?php if(isset($message)) { echo $message; } ?></div>
-  <div class="but">
-    <button type="submit" class="btn btn-primary">Register</button>
-  </div>
-  
-</form>
 
 
 <div class="jumbotron">
@@ -159,30 +87,6 @@
     <a class="btn btn-primary btn-lg" href="#" role="button">Report</a>
   </p>
 </div>
-
-
-
-
-
-
-
-<style>
-  .form-group, .form-row {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 1%;
-  }
-
-  .but {
-    padding-left: 20%; 
-    padding-bottom: 2%;
-  }
-
-</style>
-
-
-
-
 
 
 

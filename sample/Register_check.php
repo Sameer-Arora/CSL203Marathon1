@@ -3,10 +3,16 @@
         
     <?php 
     session_start();
-    
-      if (isset($_GET['form_submitted'])):
+        
+        include('/Smarty/smarty/libs/Smarty.class.php');
+
+        $smarty = new Smarty;
+      
+        if (isset($_GET['form_submitted'])):
          $_SESSION['name']=$_GET['name'];
-        include('/var/www/html/csl203/sample/logged_home.html');
+        $smarty->assign('name', $_GET['name']);
+        
+        $smarty->display('logged_home.tpl');
 
         ?> 
          
@@ -23,7 +29,6 @@
         <?php 
         include('/var/www/html/csl203/sample/register.html');
         ?>
-        
      <?php endif; ?> 
     </body>
 </html>

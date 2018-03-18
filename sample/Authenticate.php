@@ -10,12 +10,22 @@ function redirect($url){
     }    
 }
 
-function run_query(){
-    
+function run_query($connection,$query){
+    $strSQL=mysqli_query($connection,$query);
+    $executed=false;
+    if($strSQL){
+        $exectued=true;
+    }else{
+        echo "Error".$connection->error;
+    }
+          
+    return $executed;
 }
     include('Databaseconnection.php');
 
     $successful_login=false;
+    $successful_signup=false;
+    $person_name;
 
     if(isset($_POST['action']))
     {          
@@ -29,6 +39,7 @@ function run_query(){
             if(count($Results)>=1)
             {
                 $message = $Results['name']." Login Sucessfully!!";
+                $person_name=$Results['name'];
                 $successful_login=true;
             }
             else
@@ -61,25 +72,33 @@ function run_query(){
                 $message = $email." Email already exist!!";
             }
             else
-            {
-                mysqli_query($connection,"insert into auth(name,email,password,phone_number) values('".$name."','".$email."','".$password."',".$phone_number.")");
-                
-                
-                $message = "Signup Sucessfully!!";
-                $successful_login=true;
+            {   
+                $query = "insert into auth(name,email,password,phone_number) values('".$name."','".$email."','".$password."',".$phone_number.")";
 
+                $executed=run_query($connection,$query);
+                
+                if($executed){
+                    $message = "Signup Sucessfully!! ";
+                    $successful_signup=true;
+                    $person_name=$name;
+                }
             }
         }
     }
 
 
 echo "<br>$message";
-/*if($successful_login){
-    redirect("/csl203/sample/Register.php?form_submitted=true & message=$message");
+if($successful_login){
+    
+    redirect("/csl203/sample/Register.php?form_submitted=true&message=$message&name=$person_name");
+}
+else if($successful_signup){
+    redirect("/csl203/sample/Register.php?form_submitted=true&message=$message&name=$person_name");
+
 }
 else{
     redirect("/csl203/sample/Register.php?message=$message");
 }
-*/
+
 
 ?>
