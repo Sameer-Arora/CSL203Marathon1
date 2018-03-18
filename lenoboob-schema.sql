@@ -7,7 +7,7 @@ CREATE TABLE auth (
 	name VARCHAR(45) NOT NULL,
 	email VARCHAR(45) NOT NULL,
 	password	 VARCHAR(20) NOT NULL,
-	phone_no VARCHAR(20) NOT NULL,
+	phone_number VARCHAR(20) NOT NULL,
 	PRIMARY KEY (person_id)
 );
 
