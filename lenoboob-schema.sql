@@ -1,5 +1,5 @@
-DROP SCHEMA IF EXISTS lenoboob;
-CREATE SCHEMA lenoboob;
+DROP DATABASE IF EXISTS lenoboob;
+CREATE DATABASE lenoboob;
 USE lenoboob;
 
 CREATE TABLE auth (
@@ -15,5 +15,6 @@ CREATE TABLE feeds (
 	feed_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
 	person_id SMALLINT UNSIGNED NOT NULL,
 	content	TEXT,
+	PRIMARY KEY (feed_id),
 	FOREIGN KEY (person_id) REFERENCES auth(person_id)
 );
