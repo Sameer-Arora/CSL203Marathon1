@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LENOBOOB</title>
+  <title>NEWSY</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 
 <!--
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="vim.html">LENOBOOB</a>
+    <a class="navbar-brand" href="vim.html">NEWSY</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,14 +45,15 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="done.html">LENOBOOB</a>
+    <a class="nav-link active" href="home.html">NEWSY</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="feed.php">Post New</a>
+    <a class="nav-link" href="/csl203/sample/Register.php">Logout</a>
   </li>
- <li class="nav-item" style="float: right;">
-     <?php echo "$_SESSION['name']"; ?>
-    </li>
+    
+  <li class="nav-item">
+    <a class="nav-link" id="name_container"></a>
+  </li>
 </ul>
 
 
@@ -65,21 +66,35 @@
 </style>
 
 
-<div class="card mb-3">
-  <img class="card-img-top" src="https://picsum.photos/894/180/?random" alt="Card image cap">
+<br>
+
+<div class="card-">
+  <div class="card mb-3">
   <div class="card-body">
-    <h5 class="card-title">Person's Name</h5>
-    <p class="card-text">This will contain the texts that person has posted.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <h5 class="card-title"><center>News headline</center></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><center>Date/location etc.</center></h6>
+    <p class="card-text"><center>Summary</center></p>
+    <a href="#" class="card-link"><center>...Read More</center></a>
+    
+  </div>
+  <div class="card-footer text-muted">
+      <a href=""> <img src="https://use.fontawesome.com/releases/v5.0.8/svgs/solid/thumbs-up.svg" alt="Upvote" style="width:15px;height:15px;"></a>
+    <a href=""><img src="https://use.fontawesome.com/releases/v5.0.8/svgs/solid/thumbs-down.svg" alt="Downvote" style="width:15px;height:15px;" align = "right">
+      </a>
   </div>
 
+</div>
+</div>
 
-
-
+<script type="text/javascript">
+    document.getElementById('name_container').innerHTML=
+        '<?php echo "$name"; ?>';
+    
+</script>>  
 
 
 <div class="jumbotron">
-  <h1 class="display-4">We are LenobOOb</h1>
+  <h1 class="display-4">We are Newsy</h1>
   <p class="lead">For more details you can contact us</p>
   <hr class="my-4">
   <p>In case you are facing any issue you can report here</p>
@@ -90,6 +105,13 @@
 
 
 
+<style>
+  .card- {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1%;
+  }
+</style>  
 
 
 
